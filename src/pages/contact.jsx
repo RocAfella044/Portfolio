@@ -48,25 +48,14 @@ export default function Contact() {
             id="email"
             name="email"
             value={formData.email}
+            pattern='.+@outlookcom'
             onChange={handleChange}
             required
             placeholder="****@outlook.com"
           />
         </div>
 
-        <div className="form-group">
-          <label htmlFor="age">
-            <FaTransgenderAlt /> Age:
-          </label>
-          <input
-            type="number"
-            id="age"
-            name="age"
-            value={formData.age}
-            onChange={handleChange}
-            required
-          />
-        </div>
+  
 
         <div className="form-group">
           <label htmlFor="message">
