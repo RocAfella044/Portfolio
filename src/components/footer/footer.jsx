@@ -4,8 +4,8 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <p>Portfolio 2021<br></br>
-        @copy right reserved.</p>
+        <p>Mandeep Rajbhandari<br></br>
+        </p>
         <div className="social-links">
           <a
             href="https://github.com/RocAfella044"
