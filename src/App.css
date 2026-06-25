@@ -519,6 +519,7 @@ body {
   background: rgba(255, 255, 255, 0.04);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
   margin-bottom: 2rem;
+  
 }
 
 .article-card p {
@@ -526,6 +527,7 @@ body {
   line-height: 1.9;
   margin-bottom: 1.25rem;
   font-size: 1rem;
+  text-align: justify;
 }
 
 .article-section {
@@ -551,24 +553,7 @@ body {
   color: #f4f1ff;
 }
 
-.article-summary ul {
-  list-style: none;
-  padding-left: 0;
-  color: #d9d3f0;
-}
 
-.article-summary li {
-  margin-bottom: 0.85rem;
-  padding-left: 1rem;
-  position: relative;
-}
-
-.article-summary li::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  color: #c3b1e1;
-}
 
 .article-note {
   padding: 1.75rem;
@@ -581,6 +566,7 @@ body {
 .article-note p {
   margin-top: 0.75rem;
   line-height: 1.8;
+  text-align: justify;
 }
 
 @media (max-width: 860px) {
