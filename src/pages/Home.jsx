@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import wowImage from '../images/wow.JPG';
+import meImage from '../images/me.jpg';
 
 export default function Home() {
   const navigate = useNavigate();
@@ -32,7 +32,7 @@ export default function Home() {
         <aside className="about-card">
           <h3>About Me</h3>
           <div className="about-image-wrap">
-            <img src={wowImage} alt="About me" className="about-card-image" />
+            <img src={meImage} alt="About me" className="about-card-image" />
           </div>
           <p>
             I am Mandeep Rajbhandari. A 23 years old who is currently learning
