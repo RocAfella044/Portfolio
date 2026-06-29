@@ -4,11 +4,11 @@ export default function Skills() {
   const skills = [
     {
       category: 'Frontend',
-      items: ['HTML', 'CSS', 'JavaScript', 'React'],  icon: FaReact,
+      items: ['HTML', 'CSS', 'Modern JavaScript', 'React.js'],  icon: FaReact,
     },
     {
       category: 'Tools',
-      items: ['Git', 'Vite', 'VS Code', 'Figma'],
+      items: ['Git', 'Redux.js', 'VS Code', 'Figma', 'Rest API'],
       icon: FaTools,
     },
   ];
