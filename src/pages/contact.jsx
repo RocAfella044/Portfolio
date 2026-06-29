@@ -36,28 +36,24 @@ export default function Contact() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-    if (error) setError(''); // Clear error when typing
+    if (error) setError(''); 
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Simple Email Validation
+    
     if (!formData.email.toLowerCase().endsWith('@gmail.com')) {
       setError('Email must end with @gmail.com');
       return;
     }
 
-    // Simulate sending
     console.log('Form submitted:', formData);
 
-    // Save form submission to local storage
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
 
-    // Show success popup
     setShowPopup(true);
 
-    // Reset form
     setFormData({ name: '', email: '', message: '' });
   };
 
@@ -118,7 +114,6 @@ export default function Contact() {
         </button>
       </form>
 
-      {/* Simple Success Popup */}
       {showPopup && (
         <div className="popup-overlay">
           <div className="popup">
