@@ -1,11 +1,5 @@
 import { useEffect, useState } from 'react';
-import {
-  FaUser,
-  FaEnvelope,
-  FaComments,
-  FaPaperPlane,
-  FaTimes,
-} from 'react-icons/fa';
+import {FaUser, FaEnvelope, FaComments, FaPaperPlane, FaTimes } from 'react-icons/fa';
 
 const STORAGE_KEY = 'contactFormData';
 
