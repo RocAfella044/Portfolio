@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import meImage from '../images/me.jpg';
+import meImage from '../images/me.JPG';
 
 export default function Home() {
   const navigate = useNavigate();
