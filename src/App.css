@@ -553,7 +553,16 @@ body {
   color: #f4f1ff;
 }
 
-
+.hero-description2 {
+ width: 100%;
+  max-width: 860px;
+  padding: 2rem;
+  border-radius: 28px;
+  border: 1px solid rgba(195, 177, 225, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
+  margin-bottom: 2rem;
+}
 
 .article-note {
   padding: 1.75rem;
@@ -561,6 +570,14 @@ body {
   border: 1px solid rgba(195, 177, 225, 0.18);
   background: rgba(255, 255, 255, 0.04);
   color: #d9d3f0;
+}
+.hero-tag2 {
+  display: inline-flex;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 2em;
+  color: #c3b1e1;
+  margin-bottom: 1rem;
 }
 
 .article-note p {
