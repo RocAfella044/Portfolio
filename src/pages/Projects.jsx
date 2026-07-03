@@ -11,7 +11,7 @@ export default function Projects() {
       id: 2,
       title: 'WeatherApp',
       description:
-        'We can search any cities weather for a week with local time and temperature.',
+        'A responsive weather application that allows users to search for any city worldwide and view real-time weather conditions, a 7-day forecast, local time, temperature, humidity, wind speed, and other essential weather information through an intuitive and user-friendly interface.',
       link: 'https://weatherapp-nine-eosin-96.vercel.app/',
     },
     {
