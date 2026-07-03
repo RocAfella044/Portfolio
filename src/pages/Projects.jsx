@@ -10,14 +10,16 @@ export default function Projects() {
     {
       id: 2,
       title: 'WeatherApp',
-      description: 'We can search any cities weather for a week with local time and temperature.',
+      description:
+        'We can search any cities weather for a week with local time and temperature.',
       link: 'https://weatherapp-nine-eosin-96.vercel.app/',
     },
     {
       id: 3,
-      title: 'Portfolio',
-      description: 'Responsive portfolio website built with React and Vite.',
-      link: 'https://wow-psi-seven.vercel.app/',
+      title: 'Rocafella wears',
+      description:
+        'Responsive responsive e-commerce web application that allows users to browse clothing products, search and filter items, add products to a cart or favorites, authenticate using Supabase Authentication, and manage their shopping experience.',
+      link: 'https://rocafella-clothes.vercel.app/',
     },
     {
       id: 4,

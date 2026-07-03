@@ -50,11 +50,11 @@ export default function Home() {
             </li>
             <li>
               Trinity International College, Kathmandu <br></br>
-              (Science) -- 2018–2020
+              2018–2020
             </li>
             <li>
               Informatics College, Pokhara <br></br>
-              (BIT) -- 2022–2025
+              2022–2025 (BIT)
             </li>
             <li>
               Intern at Xdezo Technology, Pokhara <br></br>Nov 2024 – Febuary
