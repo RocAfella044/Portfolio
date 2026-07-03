@@ -560,8 +560,14 @@ body {
   border: 1px solid rgba(195, 177, 225, 0.18);
   background: rgba(255, 255, 255, 0.04);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
-  margin-bottom: 2rem;
+  text-align: justify;
+  line-height: 1.9;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+  text-align: justify;
 }
+
+
 
 .article-note {
   padding: 1.75rem;
