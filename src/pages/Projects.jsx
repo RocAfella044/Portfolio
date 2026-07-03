@@ -4,7 +4,7 @@ export default function Projects() {
       id: 1,
       title: 'FYP',
       description:
-        'Final year project with both frontend (React) and backend (Django) .',
+        'A full-stack final year project developed using React for the frontend and Django for the backend, featuring user authentication, product management, shopping cart, wishlist, secure payment integration, and a responsive user interface following modern web development practices.',
       link: 'https://github.com/RocAfella044/fyp',
     },
     {
@@ -16,7 +16,7 @@ export default function Projects() {
     },
     {
       id: 3,
-      title: 'Rocafella wears',
+      title: 'Rocafella Wears',
       description:
         'Responsive responsive e-commerce web application that allows users to browse clothing products, search and filter items, add products to a cart or favorites, authenticate using Supabase Authentication, and manage their shopping experience.',
       link: 'https://rocafella-clothes.vercel.app/',
