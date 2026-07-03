@@ -24,7 +24,7 @@ export default function Projects() {
     {
       id: 4,
       title: 'ANFA Website',
-      description: 'Nepal Football Team News, History and Fixtures',
+      description: 'Nepal Football Team News, History and FixturesA modern football platform dedicated to the Nepal National Football Team, featuring the latest news, upcoming fixtures, team history, player information, achievements, and an engaging responsive design.',
       link: 'https://nepalfootballteam.vercel.app/',
     },
   ];
