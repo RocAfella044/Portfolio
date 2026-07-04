@@ -10,7 +10,7 @@ export default function Home() {
         <span className="hero-tag">Hello Homosapiens. I am</span>
         <h1>Mandeep Rajbhandari</h1>
         <p className="hero-description">
-          I am a creative frontend developer (React.js). I am currently living
+          I am a frontend developer (Modern javascript & React.js). I am currently living
           in kathmandu, Nepal and completed my bachelor's degree in computer
           science at Informatics College, Pokhara (affiliated to London
           Metropolitan University).
