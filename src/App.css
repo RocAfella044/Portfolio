@@ -80,6 +80,7 @@ body {
   cursor: crosshair;
   font-size: 1rem;
   padding: 0.5rem 0.75rem;
+  text-decoration: none;
   transition:
     color 0.3s ease,
     transform 0.2s ease;
@@ -518,7 +519,6 @@ body {
   background: rgba(255, 255, 255, 0.04);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
   margin-bottom: 2rem;
-  
 }
 
 .article-card p {
@@ -553,7 +553,7 @@ body {
 }
 
 .hero-description2 {
- width: 100%;
+  width: 100%;
   max-width: 860px;
   padding: 2rem;
   border-radius: 28px;
@@ -566,8 +566,6 @@ body {
   font-size: 1rem;
   text-align: justify;
 }
-
-
 
 .article-note {
   padding: 1.75rem;
