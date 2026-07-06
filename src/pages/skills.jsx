@@ -3,14 +3,14 @@ import { FaPalette, FaReact, FaServer } from 'react-icons/fa';
 export default function Skills() {
   const skills = [
     {
-      category: 'Frontend Craft',
+      category: 'Frontend',
       description:
-        'Building polished, responsive interfaces with modern JavaScript and thoughtful interaction.',
-      items: ['HTML5 & CSS3', 'Modern JavaScript', 'React.js', 'Accessibility'],
+        'Building responsive interfaces with modern JavaScript and thoughtful interaction.',
+      items: ['HTML & CSS', 'Modern JavaScript', 'React.js'],
       icon: FaReact,
     },
     {
-      category: 'Visual Storytelling',
+      category: 'Visual Design',
       description:
         'Turning concepts into visuals that feel calm, expressive, and memorable.',
       items: [
@@ -22,7 +22,7 @@ export default function Skills() {
       icon: FaPalette,
     },
     {
-      category: 'Development Workflow',
+      category: 'Development',
       description:
         'Keeping ideas organized, scalable, and ready to grow into real experiences.',
       items: ['Git & GitHub', 'REST APIs', 'Responsive design', 'Debugging'],
@@ -33,7 +33,7 @@ export default function Skills() {
   return (
     <section className="page skills-page">
       <div className="skills-hero">
-        <span className="hero-tag2">creative toolkit</span>
+        <span className="hero-tag2">creative tools</span>
         <h2>Skills that shape the experience</h2>
         <p>
           I blend design thinking, storytelling, and front-end development to
