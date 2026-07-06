@@ -447,7 +447,6 @@ body {
   color: #e8dbff;
 }
 
-/* Skills Page */
 .skills-page {
   display: flex;
   flex-direction: column;
@@ -583,7 +582,7 @@ body {
   background: rgba(255, 255, 255, 0.04);
 }
 
-/* Article Page */
+
 .article-page {
   display: flex;
   flex-direction: column;
