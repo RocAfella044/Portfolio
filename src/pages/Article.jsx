@@ -17,7 +17,7 @@ const Article = () => {
       <div className="article-highlight-strip">
         <span className="article-pill">Observation</span>
         <span className="article-pill">Emotion</span>
-        <span className="article-pill">Everyday wonder</span>
+        <span className="article-pill">Everyday Rhythm</span>
       </div>
 
       <article className="article-card">
