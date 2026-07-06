@@ -492,13 +492,8 @@ body {
   background: rgba(255, 255, 255, 0.04);
 }
 
-.gradient-card {
-  background: linear-gradient(
-    135deg,
-    rgba(110, 69, 129, 0.3),
-    rgba(195, 177, 225, 0.16)
-  );
-}
+
+
 
 .skills-highlight-card h3 {
   color: #f4f1ff;

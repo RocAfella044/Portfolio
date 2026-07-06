@@ -33,11 +33,11 @@ export default function Skills() {
   return (
     <section className="page skills-page">
       <div className="skills-hero">
-        <span className="hero-tag2">creative tools</span>
+        <span className="hero-tag2">creative toolkits</span>
         <h2>Skills that shape the experience</h2>
         <p>
-          I blend design thinking, storytelling, and front-end development to
-          create work that feels both functional and emotionally resonant.
+          I work with design thinking, storytelling, and front-end development to
+          create work.
         </p>
       </div>
 
@@ -45,16 +45,16 @@ export default function Skills() {
         <div className="skills-highlight-card gradient-card">
           <h3>Design-led thinking</h3>
           <p>
-            Every interface is shaped around clarity, rhythm, and human feeling.
+            Every interface is shaped around simplicity, rhythm, and human feeling.
           </p>
         </div>
         <div className="skills-highlight-card">
           <h3>Flexible build process</h3>
           <p>
-            Projects move smoothly from concept sketches to polished digital
+            Projects move smoothly from concept sketches to digital
             experiences.
           </p>
-        </div>
+        </div> 
       </div>
 
       <div className="skills-container">
