@@ -49,7 +49,7 @@ export default function Skills() {
           </p>
         </div>
         <div className="skills-highlight-card">
-          <h3>Flexible build process</h3>
+          <h3>build process</h3>
           <p>
             Projects move smoothly from concept sketches to digital
             experiences.
