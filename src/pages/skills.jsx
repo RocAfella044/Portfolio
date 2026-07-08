@@ -17,7 +17,7 @@ export default function Skills() {
         'UI/UX thinking',
         'Figma',
         'Design systems',
-        'Brand storytelling',
+        'Content creator',
       ],
       icon: FaPalette,
     },
