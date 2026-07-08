@@ -71,9 +71,11 @@ export default function Home() {
         <aside className="hobbies-card">
           <h3>Hobbies & Interests</h3>
           <ul className="hobbies-list">
-            <li>Reading Books</li>
+            <li>Reading literatures</li>
+            <li>Journaling</li>
             <li>Football on a turf</li>
-            <li>Photography & editing</li>
+            <li>Fitness freak</li>
+            <li>Photos and videos editing</li>
             <li>Binge Watching Movies and Series</li>
           </ul>
         </aside>
