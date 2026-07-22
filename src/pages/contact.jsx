@@ -44,7 +44,7 @@ export default function Contact() {
         <span className="contact-badge">get in touch</span>
         <h2>Let&apos;s talk</h2>
         <p>
-          Got a project, a question, or just want to say hi? I&apos;ll get back
+          Got a question, or just want to say hi? I&apos;ll get back
           to you as soon as I can.
         </p>
       </header>
@@ -91,7 +91,7 @@ export default function Contact() {
               rows="4"
               value={formData.message}
               onChange={handleChange}
-              placeholder="Tell me what's on your mind..."
+              placeholder="What's on your mind..."
               required
             />
           </div>
