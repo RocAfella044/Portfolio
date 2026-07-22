@@ -1,78 +1,60 @@
-import { FaPalette, FaReact, FaServer } from 'react-icons/fa';
+import { HiOutlineCode, HiOutlineEye, HiOutlineCog } from 'react-icons/hi';
 
 export default function Skills() {
-  const skills = [
+  const tools = [
     {
-      category: 'Frontend',
-      description:
-        'Building responsive interfaces with modern JavaScript and thoughtful interaction.',
-      items: ['HTML & CSS', 'Modern JavaScript', 'React.js'],
-      icon: FaReact,
+      area: 'Frontend',
+      note: 'I like making things that feel good to use.',
+      list: ['HTML & CSS', 'Modern JavaScript', 'React.js'],
+      icon: HiOutlineCode,
     },
     {
-      category: 'Visual Design',
-      description:
-        'Turning concepts into visuals that feel calm, expressive, and memorable.',
-      items: [
-        'UI/UX thinking',
-        'Figma',
-        'Design systems',
-        'Content creator',
-      ],
-      icon: FaPalette,
+      area: 'Visual Design',
+      note: 'Colors, spacing, typography — the small stuff matters.',
+      list: ['UI/UX', 'Figma', 'Design systems', 'Content creator'],
+      icon: HiOutlineEye,
     },
     {
-      category: 'Development',
-      description:
-        'Keeping ideas organized, scalable, and ready to grow into real experiences.',
-      items: ['Git & GitHub', 'REST APIs', 'Responsive design', 'Debugging'],
-      icon: FaServer,
+      area: 'Dev & Tools',
+      note: 'Keeps me sane when things get messy.',
+      list: ['Git & GitHub', 'REST APIs', 'Responsive design', 'Debugging'],
+      icon: HiOutlineCog,
     },
   ];
 
   return (
-    <section className="page skills-page">
-      <div className="skills-hero">
-        <span className="hero-tag2">creative toolkits</span>
-        <h2>Skills that shape the experience</h2>
+    <section className="page skills-wrap">
+      <header className="skill-header">
+        <span className="skill-badge">stack</span>
+        <h2>What I actually use</h2>
         <p>
-          I work with design thinking, storytelling, and front-end development to
-          create work.
+          Just the stuff I&apos;ve picked up along the way — some planned,
+          most by accident.
         </p>
-      </div>
+      </header>
 
-      <div className="skills-highlight-grid">
-        <div className="skills-highlight-card gradient-card">
-          <h3>Design-led thinking</h3>
-          <p>
-            Every interface is shaped around simplicity, rhythm, and human feeling.
-          </p>
+      <div className="skill-notes">
+        <div className="note-card accent">
+          <h3>design first</h3>
+          <p>I try to think about who&apos;s using it before I write a single line.</p>
         </div>
-        <div className="skills-highlight-card">
-          <h3>build process</h3>
-          <p>
-            Projects move smoothly from concept sketches to digital
-            experiences.
-          </p>
-        </div> 
+        <div className="note-card">
+          <h3>keep it simple</h3>
+          <p>Less code, less cluster, more clarity.</p>
+        </div>
       </div>
 
-      <div className="skills-container">
-        {skills.map((skillGroup) => {
-          const IconComponent = skillGroup.icon;
-
+      <div className="tool-grid">
+        {tools.map((t) => {
+          const Icon = t.icon;
           return (
-            <div key={skillGroup.category} className="skill-group">
-              <div className="skill-icon">
-                <IconComponent />
-              </div>
-              <h3>{skillGroup.category}</h3>
-              <p className="skill-description">{skillGroup.description}</p>
-              <ul className="skill-list">
-                {skillGroup.items.map((skill) => (
-                  <li key={skill} className="skill-item">
-                    {skill}
-                  </li>
+            <div key={t.area} className="tool-card">
+              <span className="tool-icon"><Icon /></span>
+              <h3>{t.area}</h3>
+              <p>{t.note}</p>
+              <ul className="tool-list">
+                {t.list.map((item) => (
+                  <li key={item}>{item}</li>
                 ))}
               </ul>
             </div>

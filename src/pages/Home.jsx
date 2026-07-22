@@ -61,7 +61,7 @@ export default function Home() {
               2025
             </li>
             <li>
-              Intern at Swift Technology, Kathmandu <br></br> May 2026 – Present
+              Intern at Swift Technology, Kathmandu <br></br> May 2026 – present
             </li>
           </ul>
         </aside>
@@ -71,12 +71,12 @@ export default function Home() {
         <aside className="hobbies-card">
           <h3>Hobbies & Interests</h3>
           <ul className="hobbies-list">
-            <li>Reading literatures</li>
+            <li>Reading literature</li>
             <li>Journaling</li>
             <li>Football on a turf</li>
-            <li>Fitness freak</li>
+            <li>Working out</li>
             <li>Photos and videos editing</li>
-            <li>Binge Watching Movies and Series</li>
+            <li>Binge-watching movies & series</li>
           </ul>
         </aside>
 

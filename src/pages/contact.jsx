@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import {FaUser, FaEnvelope, FaComments, FaPaperPlane, FaTimes } from 'react-icons/fa';
+import { FaPaperPlane, FaCheck, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const STORAGE_KEY = 'contactFormData';
 
@@ -10,8 +10,7 @@ export default function Contact() {
     message: '',
   });
 
-  const [showPopup, setShowPopup] = useState(false);
-  const [error, setError] = useState('');
+  const [sent, setSent] = useState(false);
 
   useEffect(() => {
     const saved = window.localStorage.getItem(STORAGE_KEY);
@@ -30,95 +29,85 @@ export default function Contact() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-    if (error) setError(''); 
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    
-    if (!formData.email.toLowerCase().endsWith('@gmail.com')) {
-      setError('Email must end with @gmail.com');
-      return;
-    }
-
-    console.log('Form submitted:', formData);
-
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
-
-    setShowPopup(true);
-
+    setSent(true);
     setFormData({ name: '', email: '', message: '' });
   };
 
-  const closePopup = () => {
-    setShowPopup(false);
-  };
-
   return (
-    <section className="contact-page">
-      <h2>Contact Me</h2>
+    <section className="page contact-wrap">
+      <header className="contact-head">
+        <span className="contact-badge">get in touch</span>
+        <h2>Let&apos;s talk</h2>
+        <p>
+          Got a project, a question, or just want to say hi? I&apos;ll get back
+          to you as soon as I can.
+        </p>
+      </header>
 
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label>
-            <FaUser /> Name:
-          </label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder='Full Name'
-            required
-          />
+      <div className="contact-inner">
+        <div className="contact-info">
+          <div className="contact-head-row">
+            <h3>Reach out</h3>
+          </div>
+          <div className="contact-social">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /> Facebook</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /> Instagram</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /> LinkedIn</a>
+          </div>
+          <div className="contact-divider" />
+          <p className="contact-location">mandeep@email.com</p>
+          <p className="contact-location">Kathmandu, Nepal</p>
         </div>
 
-        <div className="form-group">
-          <label>
-            <FaEnvelope /> Email:
-          </label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Your Email"
-            required
-          />
-          {error && <p className="error">{error}</p>}
-        </div>
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <div className="field">
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Your name"
+              required
+            />
+          </div>
+          <div className="field">
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Your email"
+              required
+            />
+          </div>
+          <div className="field">
+            <textarea
+              name="message"
+              rows="4"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="Tell me what's on your mind..."
+              required
+            />
+          </div>
+          <button type="submit" className="contact-btn">
+            <FaPaperPlane /> Send message
+          </button>
+        </form>
+      </div>
 
-        <div className="form-group">
-          <label>
-            <FaComments /> Message:
-          </label>
-          <textarea
-            name="message"
-            rows="5"
-            value={formData.message}
-            onChange={handleChange}
-            placeholder='Leave us a message...'
-            required
-          />
-        </div>
-
-        <button type="submit" className="submit-btn">
-          <FaPaperPlane /> Send
-        </button>
-      </form>
-
-      {showPopup && (
-        <div className="popup-overlay">
-          <div className="popup">
-            <button className="close-btn" onClick={closePopup}>
-              <FaTimes />
-            </button>
-            <h3>Message Sent!</h3>
-            <p>Thank you. I'll be right back at you.</p>
-            <button className="close-btn-main" onClick={closePopup}>
-              OK
-            </button>
+      {sent && (
+        <div className="sent-overlay" onClick={() => setSent(false)}>
+          <div className="sent-card" onClick={(e) => e.stopPropagation()}>
+            <span className="sent-icon"><FaCheck /></span>
+            <h3>Thanks!</h3>
+            <p>Your message came through. I&apos;ll reply soon.</p>
+            <button onClick={() => setSent(false)}>Got it</button>
           </div>
         </div>
       )}
