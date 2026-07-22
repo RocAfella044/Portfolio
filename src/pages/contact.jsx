@@ -60,7 +60,7 @@ export default function Contact() {
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /> LinkedIn</a>
           </div>
           <div className="contact-divider" />
-          <p className="contact-location">mandeep@email.com</p>
+          <p className="contact-location">mandeeprajbhandari12@gmail.com</p>
           <p className="contact-location">Kathmandu, Nepal</p>
         </div>
 
