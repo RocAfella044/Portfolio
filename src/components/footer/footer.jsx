@@ -1,11 +1,15 @@
 import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <div className="footer-container">
-        <p>Mandeep Rajbhandari<br></br>
-        </p>
+        <div className="footer-brand">
+          <p className="footer-name">Mandeep Rajbhandari</p>
+          <p className="footer-copy">&copy; {year} All rights reserved.</p>
+        </div>
         <div className="social-links">
           <a
             href="https://github.com/RocAfella044"

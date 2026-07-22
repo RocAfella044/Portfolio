@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { FaPaperPlane, FaCheck, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaPaperPlane, FaCheck, FaFacebook, FaInstagram, FaLinkedin, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 const STORAGE_KEY = 'contactFormData';
 
@@ -52,7 +52,7 @@ export default function Contact() {
       <div className="contact-inner">
         <div className="contact-info">
           <div className="contact-head-row">
-            <h3>Reach out</h3>
+            <h2>Find me on</h2>
           </div>
           <div className="contact-social">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /> Facebook</a>
@@ -60,8 +60,8 @@ export default function Contact() {
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /> LinkedIn</a>
           </div>
           <div className="contact-divider" />
-          <p className="contact-location">mandeeprajbhandari12@gmail.com</p>
-          <p className="contact-location">Kathmandu, Nepal</p>
+          <p className="contact-location"><FaEnvelope /> mandeeprajbhandari12@gmail.com</p>
+          <p className="contact-location"><FaMapMarkerAlt /> Kathmandu, Nepal</p>
         </div>
 
         <form className="contact-form" onSubmit={handleSubmit}>
