@@ -595,10 +595,10 @@ body {
 }
 
 .essay-intro {
-  color: #b9b2ce;
+  color: #d9d3f0;
   font-size: 1.05rem;
   line-height: 1.8;
-  border-left: 2px solid rgba(195, 177, 225, 0.3);
+  border-left: 2px solid rgba(86, 73, 107, 0.3);
   padding-left: 1.25rem;
 }
 
@@ -611,6 +611,7 @@ body {
   line-height: 1.9;
   font-size: 1rem;
   margin-bottom: 1.25rem;
+  text-align: justify;
 }
 
 .essay-dropcap {

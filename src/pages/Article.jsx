@@ -13,12 +13,12 @@ export default function Article() {
         </p>
       </div>
 
-      <div className="essay-body">
+<div className="essay-body">
         <p>
-          <span className="essay-dropcap">T</span>he everyday is a ready-made
+          <span className="essay-dropcap">T</span>the everyday is a ready-made
           portrait if we choose to see it that way. The quiet rhythm of
           morning light, the hum of a city, the familiar shape of footsteps on
-          stairs — these are rich with texture and story. By slowing down to
+          stairs  these are rich with texture and story. By slowing down to
           notice, then translating those moments into words, I try to turn
           private experience into something shared.
         </p>
