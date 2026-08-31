@@ -1,24 +1,21 @@
-import { HiOutlineCode, HiOutlineEye, HiOutlineCog } from 'react-icons/hi';
+
 
 export default function Skills() {
   const tools = [
     {
       area: 'Frontend',
       note: 'I like making things that feel good to use.',
-      list: ['HTML & CSS', 'Modern JavaScript', 'React.js'],
-      icon: HiOutlineCode,
+      list: ['HTML & CSS', 'Modern JavaScript', 'Typescript', 'React'],
     },
     {
       area: 'Visual Design',
       note: 'Colors, spacing, typography — the small stuff matters.',
       list: ['UI/UX', 'Figma', 'Design systems', 'Content creator'],
-      icon: HiOutlineEye,
     },
     {
       area: 'Dev & Tools',
       note: 'Keeps me sane when things get messy.',
       list: ['Git & GitHub', 'REST APIs', 'Responsive design', 'Debugging'],
-      icon: HiOutlineCog,
     },
   ];
 
@@ -46,10 +43,8 @@ export default function Skills() {
 
       <div className="tool-grid">
         {tools.map((t) => {
-          const Icon = t.icon;
           return (
             <div key={t.area} className="tool-card">
-              <span className="tool-icon"><Icon /></span>
               <h3>{t.area}</h3>
               <p>{t.note}</p>
               <ul className="tool-list">
